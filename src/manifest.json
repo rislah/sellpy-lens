@@ -1,0 +1,13 @@
+{
+  "name": "Sellpy Lens",
+  "description": "Search items on Sellpy with Google Lens",
+  "version": "0.1",
+  "manifest_version": 3,
+  "permissions": ["tabs"],
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": ["https://www.sellpy.com/item/*"]
+    }
+  ]
+}
